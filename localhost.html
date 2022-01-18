@@ -1,0 +1,30 @@
+
+<!DOCTYPE html><html lang="en-GB"><head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from './../node_modules/lit/index.js';
+    import './../lab-one.js';
+
+    const title = 'Hello owc World!';
+    render(
+      html`
+        <lab-one .title=${title}>
+          some light-dom
+        </lab-one>
+      `,
+      document.querySelector('#demo')
+    );
+  </script>
+<!-- injected by web-dev-server -->
+<script type="module" src="/__web-dev-server__web-socket.js"></script>
+
+</body></html>
